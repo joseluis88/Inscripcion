@@ -1,17 +1,20 @@
-import './App.css'
+import "./App.css";
+
+// Iconos
+import CarbonTaskAdd from "./assets/CarbonTaskAdd";
+
+// Componentes
+import Inscribir from './Componentes/Botones/Inscribir'
 
 function App() {
-
   return (
     <>
-      <button className="btn btn-active">Button</button>
-<button className="btn btn-active btn-primary">Button</button>
-<button className="btn btn-active btn-secondary">Button</button>
-<button className="btn btn-active btn-accent">Button</button>
-<button className="btn btn-active btn-ghost">Button</button>
-<button className="btn btn-active btn-link">Button</button>
+      <div className="App h-screen">
+        
+        <Inscribir titulo='Inscribir Jugador' Icono={CarbonTaskAdd}/>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
